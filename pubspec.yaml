@@ -1,0 +1,86 @@
+name: studyflow
+description: A production-ready offline-first study productivity app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # Database
+  sqflite: ^2.3.3
+  path: ^1.9.0
+
+  # Notifications
+  flutter_local_notifications: ^17.1.2
+
+  # Encryption
+  cryptography: ^2.5.0
+
+  # Secure storage
+  flutter_secure_storage: ^10.2.0
+
+  # Charts
+  fl_chart: ^0.67.0
+
+  # Fonts
+  google_fonts: ^8.1.0
+
+  # UUID generation
+  uuid: ^4.4.0
+
+  # Date/time utilities
+  intl: ^0.19.0
+
+  # Shared preferences (for non-sensitive settings)
+  shared_preferences: ^2.3.2
+
+  # Color picker
+  flex_color_picker: ^3.5.1
+
+  # Drag and reorder
+  reorderables: ^0.6.0
+
+  # Animations
+  flutter_animate: ^4.5.0
+
+  # Icons
+  flutter_svg: ^2.0.10+1
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.9
+  riverpod_generator: ^2.4.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/illustrations/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
